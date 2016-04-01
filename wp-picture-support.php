@@ -73,11 +73,7 @@ if ( ! function_exists( 'wp_get_attachment_picture' ) ) {
 
 	/**
 	 * Get an HTML picture element following one of the previously registered formats
-	 *
-	 * While $size will accept an array, it is better to register a size with
-	 * add_image_size() so that a cropped version is generated. It's much more
-	 * efficient than having to find the closest-sized image and then having the
-	 * browser scale down the image.
+	 * e.g.: echo wp_get_attachment_picture( 123, 'product-header');
 	 *
 	 * @see add_image_size()
 	 *
